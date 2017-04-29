@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "ArialRegular";
+  src: url("../fonts/ArialRegular.eot");
+  src: url("../fonts/ArialRegular.woff") format("woff");
+  src: url("../fonts/ArialRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ArialBold";
+  src: url("../fonts/ArialBold.eot");
+  src: url("../fonts/ArialBold.woff") format("woff");
+  src: url("../fonts/ArialBold.ttf") format("truetype");
+}
+body{
+  background: lightseagreen;
+}
+body, p, h2, ol {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20%;
+}
+
+form h2 {
+  color: #4488bb;
+  margin-bottom: 14px;
+}
+
+form .input-content {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+form .input-content input {
+  text-indent: 10px;
+}
+
+form select {
+  cursor: pointer;
+}
+
+form .input, form select, form .input-content {
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  color: #aaaaaa;
+}
+
+form input, form select {
+  background: #eeeeee;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form input:focus ~ .input-placeholder, form .input-placeholder-little {
+  top: 5px !important;
+  left: 9px !important;
+  font-size: 11px !important;
+}
+
+form .input-placeholder {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  cursor: text;
+  transition: 0.2s ease all;
+  font-size: 16px;
+  font-family: "ArialRegular";
+}
+
+form .input-clear {
+  display: none;
+  position: absolute;
+  right: 14px;
+  top: 11px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+form .input-error {
+  display: none;
+  position: absolute;
+  top: 63px;
+  left: 44px;
+  z-index: 123;
+  background: #bb4444;
+  width: 168px;
+  height: 36px;
+  text-align: center;
+  line-height: 2.6;
+  color: #fff;
+  border-radius: 2px;
+  font-family: "ArialRegular";
+}
+
+form .input-error:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #bb4444;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+form .select-content {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+form .select-arrow {
+  position: absolute;
+  top: 21px;
+  right: 12px;
+  width: 16px;
+  height: 10px;
+  background: url(../image/triangle.png) no-repeat;
+}
+
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 9px;
+}
+
+form .checkbox-content {
+  width: 100%;
+  height: 18px;
+  margin-bottom: 17px;
+  color: #aaaaaa;
+}
+
+form .checkbox-content label {
+  font-size: 16px;
+  font-family: "ArialRegular";
+}
+
+form input[type="checkbox"] {
+  display: none;
+}
+
+form input[type="checkbox"] + label:before {
+  border-radius: 2px;
+  background: #eeeeee;
+  content: "\00a0";
+  display: inline-block;
+  font: 17px/1em sans-serif;
+  height: 18px;
+  margin: 0 .25em 0 0;
+  width: 18px;
+}
+
+form input[type="checkbox"]:checked + label:before {
+  background: #eeeeee;
+  content: "\2713";
+  text-align: center;
+}
+
+form input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+form .button-sumbit {
+  width: 125px;
+  height: 30px;
+  background: url(../image/submit-button.png);
+  float: left;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-family: "ArialRegular";
+}
+
+form .button-hyperlink {
+  width: 125px;
+  height: 30px;
+  background: #fff;
+  color: #aaaaaa;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "ArialRegular";
+}
+
+.error input, .error select {
+  border: 1px solid #bb4444 !important;
+  color: #bb4444;
+}
+
+.error label {
+  color: #bb4444;
+}
+
+.error input:focus ~ .header-input-error {
+  display: block;
+}
+
+.error .header-input-clear {
+  color: #bb4444;
+}
+
+.verity input, .verity select {
+  border: 1px solid #4488bb !important;
+  color: #4488bb;
+}
+
+.verity label {
+  color: #4488bb;
+}
+
+.verity .header-input-clear {
+  color: #4488bb;
+}
+
+.visible {
+  display: block !important;
+}

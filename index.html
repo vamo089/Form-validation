@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form name="form" id="form" action="" onsubmit="return validation()">
+        <div class="input-content">
+            <input type="email" name="email" id="email" class="input" />
+            <div class="input-clear">&times</div>
+            <label for="email" class="input-placeholder">Your email address</label>
+            <div class="input-error">Enter correct E-Mail</div>
+        </div>
+        <div id="inputname" class="input-content">
+            <input type="text" name="name" id="name" class="input" />
+            <div class="input-clear">&times</div>
+            <label for="name" class="input-placeholder">Your Name</label>
+            <div class="input-error">Enter correct Name</div>
+        </div>
+        <div class="select-content">
+            <div class="select-arrow"></div>
+            <select name="select" id="select" value="select" class="select">
+				<option selected disabled hidden>Select your country</option>
+				<option>Russia</option>
+				<option>USA</option>
+				<option>Canada</option>
+				<option>Australia</option>
+				<option>Japan</option>
+			</select>
+        </div>
+        <div class="checkbox-content">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I agree with Terms & Conditions</label>
+        </div>
+        <button id="submit" type="submit" onclick="return submit_form()" class="button-sumbit">Submit</button>
+        <button id="mysubmitbutton" type="button" class="button-hyperlink">Hyperlink</button>
+    </form>
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+
+</html>
